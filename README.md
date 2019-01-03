@@ -1,2 +1,3 @@
 # the_pets_bot
-A twiiter Bot
+A Twitter Bot that automatically posts the images of pets
+Isn't that intersting? the reason being our pets cannot tweet on their own
