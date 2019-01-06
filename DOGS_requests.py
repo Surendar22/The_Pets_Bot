@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup as bs
 import os
 
 # website with model images
-url = 'https://unsplash.com/search/photos/pets'
+url = 'https://unsplash.com/search/photos/dog'
 
 # download page for parsing
 page = requests.get(url)
