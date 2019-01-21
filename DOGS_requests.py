@@ -25,12 +25,16 @@ os.chdir('Dogs')
 x = 0
 
 # writing images
-for image in image_tags:
+for n, image in enumerate(image_tags):
+    # since even numbered images are author's potrait, ignore it
+    if n % 2 == 0:
+        continue
+        
     try:
         url = image['src']
         response = requests.get(url)
         if response.status_code == 200:
-            with open('Dog-' + str(x) + '.jpg', 'wb') as f:
+            with open('image-' + str(x) + '.jpg', 'wb') as f:
                 f.write(requests.get(url).content)
                 f.close()
                 x += 1
